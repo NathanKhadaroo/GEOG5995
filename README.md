@@ -39,15 +39,22 @@ detection_radius = This indicates the distance within which zombies will cause l
 
 Sheep: 
   These are our basic agents, they interact with the environment, the Zombie Sheep, and each other.
+  
   Every update they move, check their environment for food, eat from their environment if food is available, check their neighborhood for other sheep, and share food with them if there any close enough.
+  
   They are plotted in white in our animation.
   
 Zombie Sheep:
   Our main antagonists, they interact with Sheep, and with the Holy Landmines of Antioch.
+  
   Every update they move, check their neighborhood for sheep, and bites the sheep if there are any. A bitten sheep will become a new zombie.
+  
   They are plotted in red in our animation.
   
 The Holy Landmines of Antioch:
+  
   Our sheeps only means of defence, they interact only with zombies.
+  
   Every update they check their detection radius for any zombies. If zombies are present the landmine explodes and kills all the zombies in the radius, thus remouving them, and itself, from the model.
+  
   They are plotted in gold in our animation.
