@@ -18,7 +18,7 @@ Finally if all the zombies are killed by the Holy landmines the sheep will be de
 
 To run this model the files must be in the same directory and the grapics backend for the IPython console should be set to "Automatic".
 
-The model is via the input file (NAME), which prompts the user to enter values for the parameters of the model and then runs the model.
+The model is run via the input file (Run_this_file.py), which prompts the user to enter values for the parameters of the model and then runs the model.
 
 
 The model takes the following arguments:
