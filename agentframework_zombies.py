@@ -100,7 +100,7 @@ class Zombiesheep():
         return math.sqrt( ((self.x - a.x)**2) + ((self.y-a.y)**2)) 
 
 #checks if a sheep is in the zombie's neighborhood, if there is it appends it a list
-#and returns that list
+#and returns that list as its output
         
     def bite(self, neighbourhood, agents, zombsheep):
         list_agent = []
@@ -127,7 +127,9 @@ class Holy_landmine_of_Antioch():
                 
         return math.sqrt( ((self.x - a.x)**2) + ((self.y-a.y)**2)) 
 
-#checks for the presence of zombies within the         
+#checks for the presence of zombies within the detection radius, if there are
+#any it adds them to the dead_zombies list
+        
     def detonate(self, detection_radius, zombsheep):
         dead_zombies = []
         for zombiesheep in self.zombsheep:
