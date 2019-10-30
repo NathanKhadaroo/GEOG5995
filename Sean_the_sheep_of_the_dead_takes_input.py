@@ -26,7 +26,7 @@ num_of_zombsheep = int(sys.argv[4])
 
 num_of_landmines = int(sys.argv[5])
 
-blast_radius = int(sys.argv[6])
+detection_radius = int(sys.argv[6])
 
 agents = []   
 
@@ -128,7 +128,7 @@ def update(frame_number):
 # the zombies are killed and the holy landmine is remouved
     else:
         for Holy_landmine_of_Antioch in holylandmines:
-                ded_zombies = Holy_landmine_of_Antioch.detonate(blast_radius, zombsheep)
+                ded_zombies = Holy_landmine_of_Antioch.detonate(detection_radius, zombsheep)
                 if len(ded_zombies)> 0:
                         for ded_zombie in ded_zombies:
                             zombsheep.remove(ded_zombie)
